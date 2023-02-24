@@ -1,8 +1,16 @@
 import random
+from bs4 import BeautifulSoup
+import requests
 
-print(input("What is your gender?\n "))
+
+name=print(input("Hello there brave adventurer! What is thy name?\n "))
 
 
-def male_name():
-    name=('Andrew', 'Alexander', 'Aaron', 'Alex', 'Aiden', 'Anthony', 'Alphonse', 'Allen', 'Bofur' 'Brent' 'Bifur' 'Bilbo' '')
 
+def get_stats():
+    const=random.randint(5,20)
+    strength=random.randint(5,20)
+    dex=random.randint(5,20)
+    intel=random.randint(5,20)
+
+print(name)

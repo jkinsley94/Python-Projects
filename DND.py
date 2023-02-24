@@ -1,16 +1,36 @@
 import random
-from bs4 import BeautifulSoup
-import requests
+import sys
+
+def hello():
+    name=str(input("what's thy name?\n "))
+    print("Hello " + str(name) + "!")
+    return
+
+def choices():
+    choice=str(input("Would you like a random weapon? y/n:\n"))
+    if choice is y:
+        y=print(random.choice(weapons) + " of " + random.choice(conditions))
+    elif choice is n:
+        n=print("very well.\n")
+
+weapons=[
+    'Bow', 'Axe', 'Greatsword', 'Javelin', 'Dagger', 'Scimitar', 'Rapier', 'Quarterstaff'
+]
 
 
-name=print(input("Hello there brave adventurer! What is thy name?\n "))
+conditions=[
+    'ice', 'earth', 'wind', 'fire',  'sickness' 'bleeding', 'blinding', 'fear', 'exhaustion', 'constipation', 'poison', 'madness', ''
+]
 
-
-
-def get_stats():
+def stats():
     const=random.randint(5,20)
     strength=random.randint(5,20)
     dex=random.randint(5,20)
     intel=random.randint(5,20)
+    wisd=random.randint(5,20)
+    charisma=random.randint(5,20)
+    print(const, strength, dex, intel, wisd, charisma)
 
-print(name)
+hello()
+choices()
+stats()

@@ -21,7 +21,7 @@ def choices():
 def races():
     choice=input("Would you like a random race? y/n: ")
     if choice == "y":
-        print(random.choice(race) + "is your character race.")
+        print(random.choice(race) + " is your character race.")
 
     else:
         if choice == "n":
@@ -37,7 +37,7 @@ weapons=[
 
 
 conditions=[
-    'ice', 'earth', 'wind', 'fire',  'sickness' 'bleeding', 'blinding', 'fear', 'exhaustion', 'constipation', 'poison', 'madness', ''
+    'ice', 'earth', 'wind', 'fire',  'sickness', 'bleeding', 'blinding', 'fear', 'exhaustion', 'constipation', 'poison', 'madness', ''
 ]
 
 def stats():
@@ -47,7 +47,7 @@ def stats():
     intel=random.randint(5,20)
     wisd=random.randint(5,20)
     charisma=random.randint(5,20)
-    print("here are your stats!")
+    print("here are your stats as follows:\n Constitution, Strength Dexterity Intelligence Wisdom Charisma")
     print(const, strength, dex, intel, wisd, charisma)
 
 

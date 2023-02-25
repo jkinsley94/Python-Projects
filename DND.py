@@ -7,11 +7,16 @@ def hello():
     return
 
 def choices():
-    choice=str(input("Would you like a random weapon? y/n:\n"))
+    choice=str(input("Would you like a random weapon? y/n: "))
+    y=print(random.choice(weapons) + " of " + random.choice(conditions))
+    n=print("Very well")
     if choice is y:
-        y=print(random.choice(weapons) + " of " + random.choice(conditions))
-    elif choice is n:
-        n=print("very well.\n")
+        print(y)
+    else:
+        if choice is n:
+            print(n)
+                  
+        
 
 weapons=[
     'Bow', 'Axe', 'Greatsword', 'Javelin', 'Dagger', 'Scimitar', 'Rapier', 'Quarterstaff'

@@ -16,11 +16,20 @@ def choices():
         
     else:
         if choice == "n":
-            print("Very well")
+            print("Very well.")
+
+def races():
+    choice=input("Would you like a random race? y/n: ")
+    if choice == "y":
+        print(random.choice(race) + "is your character race.")
+
+    else:
+        if choice == "n":
+            print("Very well.")    
             
-         
-                  
-        
+race=[
+    'Dwarf', 'Dragonborn', 'Elf', 'Gnome', 'Half-Elf', 'Halfling', 'Orc', 'Half-Orc', 'Human', 'Tiefling'
+]
 
 weapons=[
     'Bow', 'Axe', 'Greatsword', 'Javelin', 'Dagger', 'Scimitar', 'Rapier', 'Quarterstaff'
@@ -46,4 +55,5 @@ def stats():
 
 hello()
 choices()
+races()
 stats()

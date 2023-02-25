@@ -6,15 +6,19 @@ def hello():
     print("Hello " + str(name) + "!")
     return
 
+
+
 def choices():
-    choice=str(input("Would you like a random weapon? y/n: "))
-    y=print(random.choice(weapons) + " of " + random.choice(conditions))
-    n=print("Very well")
-    if choice is y:
-        print(y)
+    choice=(input("Would you like a random weapon? y/n: "))
+    if choice == "y":
+        print(random.choice(weapons) + " of " + random.choice(conditions))
+        
+        
     else:
-        if choice is n:
-            print(n)
+        if choice == "n":
+            print("Very well")
+            
+         
                   
         
 
@@ -34,7 +38,11 @@ def stats():
     intel=random.randint(5,20)
     wisd=random.randint(5,20)
     charisma=random.randint(5,20)
+    print("here are your stats!")
     print(const, strength, dex, intel, wisd, charisma)
+
+
+
 
 hello()
 choices()

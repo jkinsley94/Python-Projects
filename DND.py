@@ -36,8 +36,8 @@ def stats():
     intel=random.randint(5,20)
     wisd=random.randint(5,20)
     charisma=random.randint(5,20)
-    print("here are your stats as follows:\n Constitution, Strength Dexterity Intelligence Wisdom Charisma")
-    print(const, strength, dex, intel, wisd, charisma)
+    print(f"here are your stats as follows:\n Constitution: {const} \nStrength: {strength} \nDexterity: {dex} \nIntelligence: {intel} \nWisdom: {wisd} \nCharisma: {charisma}")
+
 
 hello()
 choices()

@@ -12,7 +12,7 @@ def choices():
         print(random.choice(weapons) + " of " + random.choice(conditions))        
     else:
         if choice == "n":
-            print("Very well.")
+            print("Very well!.")
 
 def races():
     choice=input("Would you like a random race? y/n: ")

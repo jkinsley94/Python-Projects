@@ -9,7 +9,7 @@ def hello():
 def choices():
     choice=(input("Would you like a random weapon? y/n: "))
     if choice == "y":
-        print(random.choice(weapons.title()) + " of " + random.choice(conditions))        
+        print(random.choice(weapons) + " of " + random.choice(conditions))        
     else:
         if choice == "n":
             print("Very well!.")
@@ -17,7 +17,7 @@ def choices():
 def races():
     choice=input("Would you like a random race? y/n: ")
     if choice == "y":
-        print(random.choice(race.title()) + " is your character race.")
+        print(random.choice(race) + " is your character race.")
     else:
         if choice == "n":
             print("Very well.")    

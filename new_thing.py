@@ -3,6 +3,6 @@ def bank():
     num = float(input("Deposit: "))
 
     balance += num
-    print(f'Balance: {balance}')
+    print(f'Your balance is: {balance}')
 
 bank()

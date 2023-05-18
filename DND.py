@@ -1,6 +1,8 @@
 import random
 import sys
 
+#this is going to have a complete rework. Next iteration will have a GUI
+
 def hello():
     name=str(input("what's thy name?\n "))
     print("Hello " + str(name.title()) + "!")

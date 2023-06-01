@@ -1,10 +1,18 @@
-import tkinter as tk
+import tkinter
 from tkinter import *
 from tkinter import ttk
-import os
 
-root = tk.Tk()
-frm=ttk.Root(root, padding=10)
-frm.grid()
-ttk.Label(frm, text="Hello world!").grid(column=0, row=0)
-ttk.Button(frm, text="Quit", command=root.destroy).grid(column=1, row=0)
+
+root = Tk()
+
+def myClick():
+    myLabel = Label(root, text="Look! I clicked a button!")
+    myLabel.pack()
+    return
+
+myButton = Button(root, text="click me!", command=myClick)
+myButton.pack()
+
+root.mainloop
+
+print("ebans")

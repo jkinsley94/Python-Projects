@@ -61,20 +61,52 @@ def pop_Round2():
     print(popped_soda)
     return None
 
+#if you know the value of something, you can remove it that way instad of knowing it's exact location index
+def value_Remove():
+    weapons=['Axe', 'Bow', 'Hammer', 'Arrow', 'Javelin', 'Quarterstaff', 'Mace']
+    print(weapons)
+    #here we remove the value Axe instead of trying to figure out what it's index location is. I included a print statement with why it was removed
+    too_heavy=('Axe')
+    print(f"\nThe {too_heavy.capitalize()} is too heavy for me.")
+    weapons.remove(too_heavy)
+    print(weapons)
+    return None
+
+
+
+def sortCars():
+    car_type=['subaru', 'audi', 'bmw', 'toyota', 'suzuki']
+    #sorts alphabetically permanently
+    car_type.sort()
+    print(car_type)
+    return
+
+def carSort2():
+    car_type=['subaru', 'audi', 'bmw', 'toyota', 'suzuki']
+    print(f"here is the original list:\n")
+    print(car_type)
+    print(f"Here is the sorted list\n")
+    print(sorted(car_type))
+    return
 
 #this is where we print out those functions. I like to use functions because it helps me keep things organized.
-motorcycles()
+#motorcycles()
 
-fruits()
+#fruits()
 
-Legumes()
+#Legumes()
 
-own_List()
+#own_List()
 
-name_Print()
+#name_Print()
 
-cycles_revisited()
+#cycles_revisited()
 
-pop_Practice()
+#pop_Practice()
 
-pop_Round2()
+#pop_Round2()
+
+#value_Remove()
+
+#sortCars()
+carSort2()
